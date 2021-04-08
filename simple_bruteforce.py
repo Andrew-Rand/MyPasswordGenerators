@@ -1,24 +1,25 @@
 letters = 'abcdefghijklmnopqrstuwxyz'
 upper_Letters = letters.upper()
 digits = '0123456789'
-symbols = '!@#$%^&*()\'\\'
+symbols = '_!@#$%^&*()\'\\'
 
 alphabet_hard =digits + letters + upper_Letters + symbols
-
 alphabet_simple = '0123456789abcdefghijklmnopqrstuwxyz'
+alphabet_digits = '0123456789'
 
 #алгоритм основан на системах счисления
 
-alphabet = alphabet_hard
-base = len(alphabet)  #база системы счисления
-length = 0
+alphabet = alphabet_hard  #выбрать алфавит
+base = len(alphabet)  #определить базу системы счисления
+length = 0  #счётчик длины поролей
 counter = 0  #счётчик итераций в десятиричной системе исчесления
 
 while True:
 
     password = ''
     temp = counter
-    while temp > 0:
+    
+    while temp > 0:  #цикл, который переводит в нужную систему счесления
         temp // base
         rest = temp % base #остаток от деления, который и является фрагментами числа в нужной системе
         temp = temp // base
