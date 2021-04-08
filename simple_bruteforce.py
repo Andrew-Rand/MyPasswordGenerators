@@ -1,7 +1,7 @@
 letters = 'abcdefghijklmnopqrstuwxyz'
 upper_Letters = letters.upper()
 digits = '0123456789'
-symbols = '!@#$%^&*()'
+symbols = '!@#$%^&*()\'\\'
 
 alphabet_hard =digits + letters + upper_Letters + symbols
 
