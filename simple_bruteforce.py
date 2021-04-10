@@ -30,6 +30,11 @@ while True:
         password = '0' + password
 
     #код с использованием подобранного пороля
+    #import requests
+    #response = requests.post('http://something/auth', json = {'login': 'admin', 'password': password})
+    #if response.status_code == 200:
+            #print('success', password)
+            #break
         
     print(password)
 
